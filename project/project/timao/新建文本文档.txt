@@ -1,0 +1,8 @@
+<!--通用样式-->
+<link type="text/css" rel="stylesheet" href="css/common.css" />
+<!--动画样式-->
+<link type="text/css" rel="stylesheet" href="css/animate.css" />
+<!--首页样式-->
+<link type="text/css" rel="stylesheet" href="css/main.css" />
+<!--字体图标库-->
+<link type="text/css" rel="stylesheet" href="css/iconfont.css"/>

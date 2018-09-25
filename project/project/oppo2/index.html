@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>产品专区</title>
+ </head>
+ <style>
+		*{margin:0;padding:0;}
+		body{font-size:12px;font-family:"微软雅黑";color:#7b7b7b}
+		a{text-decoration:none;color:#000}
+		ul,li{list-style:none;}
+		 /* header start */
+		.header{width:100%;height:35px;background:#009B72;}
+		.header .m_head{width:1175px;height:35px;margin:0 auto;background:#009B72;}
+		.header .m_head #list{width:420px;height:35px;float:left;}
+		.header .m_head #list li{float:left;line-height:35px;border-left:1px solid #47b488;}
+		.header .m_head #list li a{color:#fff;padding:0 17px;font-size:12px;display:block}
+		.header .m_head #list li a:hover{background:#47b488;}
+		.header .m_head .h_right{width:285px;height:35px;float:right}
+		.header .m_head .h_right span{width:55px;height:35px;float:left;cursor:pointer}
+		.header .m_head .h_right span:hover{background:#47b488;}
+		.header .m_head .h_right i{background:url("http://www.oppo.com/cn/assets/images/sprite-icons.svg") no-repeat -128px -121px;display:block;width:38px;height:30px;float:right;}
+		.header .m_head .h_right a{width:70px;height:35px;display:inline-block;text-align:center;line-height:35px;color:#fff;border-left:1px solid #47b488;float:left;font-size:14px;}
+		.header .m_head .h_right a:hover{background:#47b488;}
+		.header .m_head .h_right .glo{font-size:12px;}
+		 /* header end */
+		 /* title start */
+		.title{width:100%;height:80px;background:#fff;box-shadow:1px 1px 5px #ABA8A8}
+		.title .tit_head{width:1175px;height:80px;margin:0 auto;background:#fff;}
+		.title .tit_head .t_left{width:360px;height:80px;float:left;}
+		.title .tit_head .t_left a #log{margin-top:30px;float:left;}
+		.title .tit_head .t_left a #lpogo{float:left;margin-top: 20px;margin-left: 10px;width:115px;}
+		.title .tit_head .t_right{width:480px;height:80px;float:right;}
+		.title .tit_head .t_right ul li{float:left;line-height:80px;width:70px;text-align:center;margin:0 4px}
+		.title .tit_head .t_right ul li a{color:#7b7b7b;font-size:14px;font-weight:bold;display:block}
+		.title .tit_head .t_right ul li:hover a{color:#000}
+		.title .tit_head .t_right ul li span{padding:4px 2px}
+		.title .tit_head .t_right ul li span.sel{border-bottom:2px solid #2aad6f;margin-top:2px;color:#000}
+		.title .tit_head .t_right ul #shop{position:relative;}
+		.title .tit_head .t_right ul #shop #triangle{position:absolute;left:35px;top:57px;display:inline-block;border-left:10px solid transparent;border-right:10px solid transparent;border-top:10px solid transparent;border-bottom:10px solid #2aad6f;padding:0;display:none}
+		.title .tit_head .t_right ul #shop:hover .s_select{display:block}
+		.title .tit_head .t_right ul #shop:hover #triangle{display:block}
+		.title .tit_head .t_right ul li .s_select{width:200px;height:171px;position:absolute;left:-55px;top:77px;background:#2aad6f;display:none;}
+		.title .tit_head .t_right ul li .s_select a{line-height:42px;width:100%;height:42px;color:#fff;border-bottom:1px solid #3bcf89;font-weight:100;font-size:16px;}
+		.title .tit_head .t_right ul li .s_select a:hover{background:#3ebd8e;}
+		/* title end */
+		/* content start */
+		.content .c_con{width:1175px;height:20px;margin:0 auto;margin-top:20px;}
+		.content .c_con ul li{float:left;padding-left:10px;line-height:20px;font-size:14px;}
+		.content .c_con ul li a{color:#7b7b7b;}
+		.content .c_con ul li span{margin-left:10px;} 
+		.content .c_con ul li.sel{padding-left:0}
+		/* content end*/
+		 /* f_content start */
+		.f_content{width:1170px;height:100%;margin:0 auto;}
+		.f_content h1{font-size:30px;color:#393939;margin-top:30px}
+		/* f_content end */
+		/* shopping start */
+		.shopping{width:1170px;height:45px;line-height:45px;margin:0 auto;}
+		.shopping #shop_title{font-weight:bold;font-size:20px;color:#393939;margin-bottom:20px;}
+		.shopping .shop_left{width:270px;height:420px;float:left;}
+		.shopping .shop_left .N1shop{width:270px;height:260px;border:1px solid #e5e5e5;}
+		.shopping .shop_left .N1shop a{height:232px;display:block;margin-top:15px;}
+		.shopping .shop_left .N1shop a img{margin-left:65px;width:50%;}
+		.shopping .shop_left span{font-size:16px;text-align:center;display:block;margin-top:20px;color:#333}
+		.shopping .shop_left .reg{display:block;background:#2aad6f;width:100%;height:40px;margin-top:20px;text-align:center;line-height:40px;color:#fff;font-size:16px;font-weight:bold;border-radius:3px;}
+		.shopping .shop_left a{float:right;margin-top:20px;color:#333}
+		.shopping .shop_right{width:880px;float:right;border:1px solid #E2E2E2;}
+		.shopping .shop_right .shop_text{width:100%;height:100%;}
+		.shopping .shop_right #oList{padding:20px;}
+		.shopping .shop_right #oList li{width:278px;height:60px;float:left;background:#F7F7F7;border:1px solid #E4E4E4;border-left:0;text-align:center;line-height:60px;font-size:18px;font-weight:bold;color:#7b7b7b;cursor:pointer;}
+		.shopping .shop_right #oList li.active{background:#fff;border-top:5px solid #1f8657;border-bottom:none;border-left:1px solid #E4E4E4;height: 57px;}
+		.shopping .shop_right .shop_cont .video{float:left;}
+		.shopping .shop_right .shop_cont .video h2{margin-bottom:20px;}
+		.shopping .shop_right .shop_cont .video .shop_one{width:270px;height:200px;float:left;margin-left:11px;}
+		.shopping .shop_right .shop_cont .video .ones{margin-left:0}
+		.shopping .shop_right .shop_cont .video .shop_one img{max-width:100%;}
+		.shopping .shop_right .shop_cont .video .shop_one p{text-align:center;line-height:20px;font-size:16px;cursor:pointer;color:#333}
+		.shopping .shop_right .shop_cont .video .shop_one:hover p{color:#009B72}	
+		.shopping .shop_right .shop_cont #xun{margin-top:50px;margin-bottom:20px;}
+		.shopping .shop_right .shop_cont .proimg{width:100%;height:580px;position:relative;}
+		.shopping .shop_right .shop_cont .proimg a{width:50px;height:50px;display:inline-block;border-radius:50%;background:#e0e0e0;position:absolute;top:290px;}
+		.shopping .shop_right .shop_cont .proimg a:hover{background:#2aad6f}
+		.shopping .shop_right .shop_cont .proimg a i{width:20px;height:20px;display:block;margin:12px auto;background:url("http://www.oppo.com/cn/assets/images/sprite-icons.svg") no-repeat ;}
+		.shopping .shop_right .shop_cont .proimg #prev{left:40px;}
+		.shopping .shop_right .shop_cont .proimg #next{right:40px;}
+		.shopping .shop_right .shop_cont .proimg #prev i{background-position:-187px -662px;}
+		.shopping .shop_right .shop_cont .proimg #next i{background-position:-185px -632px;}
+		.shopping .shop_right .shop_cont .proimg .shopImg{width:400px;height:560px;margin:0 auto}
+		.shopping .shop_right .shop_cont .phone{width:100%;height:485px;}
+		.shopping .shop_right .shop_cont .phone h2{margin-top:20px;}
+		.shopping .shop_right .shop_cont .phone .box{width:200px;height:180px;float:left;line-height:26px;}
+		.shopping .shop_right .shop_cont .phone .box img{width:30px;height:30px;display:inline-block;float:left;}
+		.shopping .shop_right .shop_cont .phone .box h3{font-size:16px;padding-left:40px;}
+		.shopping .shop_right .shop_cont .phone .box a{display:block;font-size:16px;padding-left:40px;}
+		.shopping .shop_right .shop_cont{width:838px;padding:20px;display:none}
+		.shopping .shop_right .shop_cont .con_head{height:150px;border-bottom:1px solid #e5e5e5;}
+		.shopping .shop_right .shop_cont .con_head p strong{font-size:16px;margin-top:30px;display:block}
+		.shopping .shop_right .shop_cont .con_head p{margin-top:10px;font-size:16px;}
+		.shopping .shop_right .shop_cont .con_content{font-size:16px;margin-top:20px;border-bottom:1px solid #e0e0e0;padding-bottom:20px;}
+		.shopping .shop_right .shop_cont .con_content #t_qiao{margin-bottom:10px;}
+		.shopping .shop_right .shop_cont .con_content p{line-height:23px;}
+		.shopping .shop_right .shop_cont .con_content  a{color:#1f8657}
+		.shopping .shop_right .shop_cont .con_content #message{font-size:16px;text-align:center;line-height:50px;}
+		.shopping .shop_right #message a{color:#1f8657}
+		.shopping .shop_right .shop_cont .video_about{font-size:20px;margin-top:25px;line-height:0;margin-bottom:25px;}
+		.shopping .shop_right .shop_cont .shuaji{width:270px;height:200px;}
+		.shopping .shop_right .shop_cont .shuaji a img{max-width:100%;}
+		.shopping .shop_right .shop_cont .shuaji p{font-size:16px;text-align:center;line-height:40px;}
+		.shopping .shop_right .shop_cont .shuaji p a:hover{color:#2aad6f}
+		.shopping .shop_right .shop_cont .ColorOS{font-size:16px;}
+		.shopping .shop_right .shop_cont .ColorOS p{line-height:25px;}
+		.shopping .shop_right .shop_cont .ColorOS .C_head{text-align:center;}
+		.shopping .shop_right .shop_cont .ColorOS div{margin:0 auto;width:451px;height:800px;}
+		.shopping .shop_right .shop_cont .ColorOS .C_hsua{text-align:center;margin-top:50px;font-size:25px;}
+		.shopping .shop_right .shop_cont .ColorOS .text{text-indent:2em;}
+		.shopping .shop_right .shop_cont .m_image{width:550px;height:100%;margin:0 auto}
+		 /* shopping end */
+		 /* footer start */
+		.footer{width:100%;margin-top:50px;}
+		.footer .f_head{width:1190px;margin:0 auto}
+		.footer .f_head .Oppo{width:370px;height:112px;background:#2aad6f;padding: 10px 10px;float:left;}
+		.footer .f_head .Oppo .f_left{width:70px;height:57px;display:inline-block;background:url("images/footer.png") no-repeat;margin-top:10px;margin-left: 30px;float:left}
+		.footer .f_head a{display:block}
+		.footer .f_head .Oppo span{float:right;color:#fff;line-height:112px;font-size:20px;font-weight:bold;    margin-right: 30px;}
+		.footer .f_head .C_Os{background:#ededed;margin-left:7px}
+		.footer .f_head .shopp{margin-left:7px}
+		.footer .f_head .C_Os span{color:#000}
+		.footer .f_head .C_Os .f_left{background:url("images/footer1.png") no-repeat;height:70px;}
+		.footer .f_head .shopp .f_left{background:url("images/footer2.png") no-repeat;height:65px;}
+		.footer .f_head	.Oppo:hover{background:#47b488}
+		.footer .f_head .C_Os:hover{background:#ccc}
+		.footer .f_cont{width:1190px;height:230px;margin:0 auto;}
+		.footer .f_cont .text{width:19%;height:190px;font-size:14px;float:left}
+		.footer .f_cont .text ul li{line-height:25px;}
+		.footer .f_cont .text p{color:#1f8657;margin-top:20px;margin-bottom:20px;font-size:20px;font-weight:bold}
+		.footer .f_cont .text ul li a{color:#7b7b7b;display:block}
+		.footer .about{width:100%;height:120px;border-bottom:1px solid #ededed;border-top:1px solid #ededed;margin: 40px auto 0;}
+		.footer .about .c_about{width:1190px;height:120px;margin:0 auto}
+		.footer .about .c_about .b_left{width:330px;height:120px;float:left}
+		.footer .about .c_about .t_tit{margin-top:15px;display:inline-block;float:left}
+		.footer .about .c_about p span{float:left;line-height:45px;margin-right:5px;font-size:16px;color:#7b7b7b}
+		.footer .about .c_about .icon{display:inline-block;background:#2aad6f;width:45px;height:45px;border-radius:4px;}
+		.footer .about .c_about a .icon{width:25px;height:25px;display:block;background:url("http://www.oppo.com/cn/assets/images/sprite-icons.svg") no-repeat;margin:6px auto;}
+		.footer .about .c_about a .weibo{background-position:-129px -241px}		
+		.footer .about .c_about a .WX{background-position:-128px -350px}
+		.footer .about .c_about .IOm_txt{float:left;line-height:75px;margin-left:30px;font-size:16px;color:#7b7b7b}
+		.footer .about .c_about a .Iom{width:28px;height:100%;margin:0 auto;display:block;background:url("http://www.oppo.com/cn/assets/images/sprite-icons.svg") no-repeat -378px -794px;}
+		.footer .about .c_about .wom{width:45px;height:45px;border-radius:4px;display:inline-block;background:#2aad6f;margin:15px 0px 0 10px}
+		.footer .about .c_about	.b_right{width:580px;height:120px;float:right}
+		.footer .about .c_about	.b_right .kefu{width:287px;height:120px;float:left;position:relative;}
+		.footer .about .c_about	.b_right .kefu span{width:67px;height:67px;display:inline-block;border-radius:50%;background:#2aad6f;margin-top:14px;float:left}
+		.footer .about .c_about	.b_right .kefu span s{width:50px;height:50px;display:inline-block;background:url("images/sprite-icons.png") no-repeat -420px -791px;margin:10px auto 0;}
+		.footer .about .c_about	.b_right .kefu p{margin-left:80px;font-size:16px}
+		.footer .about .c_about	.b_right .kefu .ke_text{color:#1f8657;font-size:20px;margin-top:35px;font-weight:bold}
+		.footer .about .c_about	.b_right .kefu  .rig{width:10px;height:20px;display:inline-block;background:url("images/sprite-icons.png") no-repeat -194px -695px;position:absolute;right:108px;top:37px}
+		.footer .about .c_about	.b_right .tel .phone{background:url("images/sprite-icons.png") no-repeat -417px -1px;margin:0 auto}
+		.footer .foot_info{width:1190px;height:80px;margin:0 auto}
+		.footer .foot_info p{float:left;margin-top:25px;font-size:14px;}
+		.footer .foot_info img{margin:25px;float:left;}
+		/* footer end */
+ </style>
+ <body>
+
+
+	<!-- header start -->
+	<div class="header">
+		<div class="m_head">
+		<ul id="list">
+		<li><a href="javascript:void(0);">社区</a></li>
+		<li><a href="javascript:void(0);">ColorOS</a></li>
+		<li><a href="javascript:void(0);">软件商店</a></li>
+		<li><a href="javascript:void(0);">手机助手</a></li>
+		<li><a href="javascript:void(0);">云服务</a></li>
+		</ul>
+		<div class="h_right">
+		<span><i></i></span>
+		<a href="javascript:void(0);" id="login">登录</a>
+		<a href="javascript:void(0);" id="regit">注册</a>
+		<a href="javascript:void(0);" class="glo">Global</a>
+		</div>
+		</div>
+	</div>
+	<!-- header end -->
+	<!-- title start -->
+	<div class="title">
+	<div class="tit_head">
+	<div class="t_left">
+	<a href="javascript:void(0);">
+	<img id="log" src="images/oppo_logo.png">
+	</a>
+	<a href="javascript:void(0);">
+	<img id="lpogo" src="images/monkey-logo.gif">
+	</a>
+	</div>
+	<div class="t_right">
+	<ul>
+	<li><a href="javascript:void(0);"><span>首页</span></a></li>
+	<li><a href="javascript:void(0);"><span>产品</span></a></li>
+	<li><a href="javascript:void(0);"><span>品牌</span></a></li>
+	<li id="shop"><a href="javascript:void(0);"><span>在线商城</span></a>
+	<span id="triangle"></span>
+	<div class="s_select">
+	<a href="javascript:void(0);">手机</a>
+	<a href="javascript:void(0);">配件</a>
+	<a href="javascript:void(0);">购物指南</a>
+	<a href="javascript:void(0);">积分商城</a>
+	</div>
+</li>
+	<li><a href="javascript:void(0);"><span>体验店</span></a></li>
+	<li><a href="javascript:void(0);"><span class="sel">服务</span></a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+	<!-- title end -->
+	<!-- content start -->
+		<div class="content">
+		<div class="c_con">
+		<ul>
+		<li class="sel"><a href="javascript:void(0);">首页<span>/</span></a></li>
+		<li><a href="javascript:void(0);">服务<span>/</span></a></li>
+		<li><a href="javascript:void(0);">产品专区<span>/</span></a></li>
+		<li><a href="javascript:void(0);">N1</a></li>
+		</ul>
+		</div>
+		</div>
+		<div class="f_content">
+		<h1>
+		产品专区
+		</h1>
+		</div>
+		<!-- content end -->
+		<!-- shopping start -->
+		<div class="shopping">
+		<div id="shop_title">
+		<p>N1</p>
+		</div>
+		<div class="shop_left">
+		<div class="N1shop">
+		<a href="javascript:void(0);"><img src="images/shop.png"><span>N1</span></a>
+		</div>
+		<a href="javascript:void(0);" class="reg">注册产品</a>
+		<a href="javascript:void(0);" class="reg">预约服务</a>
+		<a href="javascript:void(0);">查看其他机型&gt;&gt;</a>
+		</div>
+		<div class="shop_right" id="sp_right">
+		<div class="shop_text">
+		<ul id="oList">
+		<li class="active">新手入门</li>
+		<li>技术答疑</li>
+		<li>固件升级</li>
+		</ul>
+		<div id="f_rights">
+		<div class="shop_cont" style="display:block">
+		<div class="video">
+		<h2>视频介绍</h2>
+		<div class="shop_one ones">
+		<a href="javascript:void(0);"><img src="images/r_shop1.png" /><p>ColorOS完整黑屏手势演示视频</p></a>
+		</div>
+		<div class="shop_one">
+		<a href="javascript:void(0);"><img src="images/r_shop2.png" /><p>《心，开始》——ColorOS 1.0亮点功能展示片</p></a>
+		</div>		
+		<div class="shop_one">
+		<a href="javascript:void(0);"><img src="images/r_shop3.png" /><p>N1 广告片 《她不知道的事》</p></a>
+		</div>
+		</div>
+		<h2 id="xun">快速入门</h2>
+		<div class="proimg">
+		<a href="javascript:void(0);" id="prev"><i></i></a>
+		<a href="javascript:void(0);" id="next"><i></i></a>
+		<div class="shopImg">
+		<ul>
+		<li><img id="Imgs" src="images/0.png"></li>
+		</ul>
+		</div>
+		</div>
+		<div class="phone">
+		<h2>手机基本信息及操作</h2>
+		<div class="box">
+		<img src="images/pic1.png">
+		<h3>快速使用方法</h3>
+		<a href="javascript:void(0);">手机介绍</a>
+		<a href="javascript:void(0);">基础操作</a>
+		</div>
+		<div class="box">
+		<img src="images/pic2.png">
+		<h3>OPPO桌面</h3>
+		<a href="javascript:void(0);">桌面内容介绍</a>
+		<a href="javascript:void(0);">桌面操作介绍</a>
+		<a href="javascript:void(0);">应用程序管理</a>
+		</div>		
+		<div class="box">
+		<img src="images/pic3.png">
+		<h3>手机基本设置</h3>
+		<a href="javascript:void(0);">无线和网络</a>
+		<a href="javascript:void(0);">安全中心</a>
+		<a href="javascript:void(0);">系统</a>
+		<a href="javascript:void(0);">声音设置</a>
+		<a href="javascript:void(0);">显示设置</a>
+		</div>	
+		<div class="box">
+		<img src="images/pic4.png">
+		<h3>多媒体</h3>
+		<a href="javascript:void(0);">音乐</a>
+		<a href="javascript:void(0);">视频</a>
+		<a href="javascript:void(0);">相机</a>
+		<a href="javascript:void(0);">相册</a>
+		</div>		
+		<div class="box">
+		<img src="images/pic4.png">
+		<h3>实用工具</h3>
+		<a href="javascript:void(0);">文件管理</a>
+		<a href="javascript:void(0);">手电筒</a>
+		<a href="javascript:void(0);">计算器</a>
+		<a href="javascript:void(0);">指南针</a>
+		<a href="javascript:void(0);">录音</a>
+		</div>		
+		<div class="box">
+		<img src="images/pic5.png">
+		<h3>网络与资源</h3>
+		<a href="javascript:void(0);">浏览器</a>
+		<a href="javascript:void(0);">软件商店</a>
+		</div>
+		<div class="box">
+		<img src="images/pic6.png">
+		<h3>通信应用</h3>
+		<a href="javascript:void(0);">联系人</a>
+		<a href="javascript:void(0);">电话</a>
+		<a href="javascript:void(0);">短信</a>
+		<a href="javascript:void(0);">邮件</a>
+		</div>		
+		<div class="box">
+		<img src="images/pic7.png">
+		<h3>更多应用程序</h3>
+		<a href="javascript:void(0);">语音助手</a>
+		<a href="javascript:void(0);">天气</a>
+		<a href="javascript:void(0);">驾驶模式</a>
+		<a href="javascript:void(0);">时钟和日历</a>
+		</div>		
+		<div class="box">
+		<img src="images/pic8.png">
+		<h3>手机娱乐</h3>
+		<a href="javascript:void(0);">游戏中心</a>
+		<a href="javascript:void(0);">OPPO乐园</a>
+		<a href="javascript:void(0);">在线书城</a>
+		<a href="javascript:void(0);">云服务</a>
+		</div>
+		</div>
+		</div>
+		<div class="shop_cont">
+		<div class="con_head">
+		<p><strong>通过OTG功能连接读取内存卡的限制要求</strong></p>
+		<p> 通过OTG功能外接读取U盘等设备类似于电脑读取U盘的操作，所以使用OTG功能读取SD（SD卡需插入读卡器来连接OTG线），并不限制格式和大小。</p>
+		</div>
+		<div class="con_content">
+		<p id="t_qiao"><strong>手机慢速快门的使用技巧</strong></p>
+<p>1.时间选择：如果你是要绘制一个较为复杂的图形，时间可以选择长一点，并不是曝光时间越长效果越好。</p>
+<p>2.距离：距离过远会导致拍出的图形很小，可多试验几次调整。</p>
+<p>3.固定手机：最好找个支架固定住手机，抖动会导致长时间曝光的画面不清晰，也可使用小叮当遥控拍照。</p>
+<p>4.颜色利用：拍摄文字图片可使用手电筒或者荧光棒，用不同的颜色区分，文字要反着写。</p>
+<p>5.街景拍摄：住在靠近公路边上的童鞋只需将手机固定在窗台，然后就可以拍摄出很多精美的照片了。</p>
+<p>6.光线对比：选择光线很暗的环境下拍摄，如在光线强的环境拍出来的效果为白色。
+慢速快门的使用方法为：</p>
+<p>1.打开相机点击进入更多功能，美颜功能右边有个翻页符号，点击翻页，选择慢速快门；</p>
+<p>2.开启后，通过时间轴确定时间，拖动白色点点选择你所需要的时间（时间与绘制图案复杂程度成正比）</p>。 
+点击<a href="javascript:void(0);">“慢速快门看过来”</a>查看操作方法。
+		</div>	
+		<div class="con_content">
+		<p id="t_qiao"><strong>背部触控的使用方法</strong></p>
+<p>N1的背部触控功能，为了方便单手操作而设计，单手握持时只需动动你灵活的食指，就能轻松单手完成各种操作。</p>
+<p>进入手机设置--背部触控，打开总开关，表示背部触控功能开启可用，具体支持功能如下（每一项功能都有单独开关，若使用需单独开启开关）：</p>
+<p>1.自定义打开程序：双击进入或退出某项程序，默认是相机，可选择程序列表里的其他程序；</p>
+<p>2.上下左右滑动：控制手机桌面左右滑动；</p>
+<p>3.相机及心情相册页面：按住震动松手拍照单击打开心情相册相机；</p>
+<p>4.阅读：按住0.2秒，左右滑动上下页；</p>
+<p>5.录音：语音助手页面单击可录音，与语音助手愉快聊天或查询相关信息；</p>
+<p>6.心情音乐界面：单击、上下滑动控制音乐播放。 </p>
+		</div>
+		<div class="con_content">
+		<p id="t_qiao"><strong>小叮当1.0的使用教程</strong></p>
+<p>小叮当1.0支持连接N1和N1 mini使用,支持功能：遥控拍照、寻找手机、手机防丢、信息提醒。</p>
+<p>连接方法：将纽扣电池装进小叮当后，按下电源键，听到滴一声，指示灯闪烁时，证明小叮当启动，开启手机的蓝牙，搜索并连接即可。</p><br />
+<p>小叮当的具体使用：</p>
+<p>1.遥控拍照--远程快门：</p>
+在小叮当应用程序界面，开启遥控拍照功能，然后进入相机拍照界面，按下小叮当的按钮，即可拍照。
+<p>2.寻找手机-- 双击小叮当，手机响铃：</p>
+<p>忘记手机哪个角落里，双击遥控器，手机就会响铃（任何情况包括静音模式下均响铃），您就可以根据铃声找到手机，再次点击遥控器停止响铃。如果没有点击，30秒后自动停止响铃。</p>
+<p>3.手机防丢--手机超过安全范围自动报警：</p>
+<p>开启手机防丢功能之后，当手机超出安全范围时，遥控器就会自动响铃报警，并且红色指示灯闪烁。手机防丢的边界值不固定，和环境有很大关系，若是空旷的地方，10-15米左右。若是环境复杂，比如人流涌动的大街上，要近一些，3-5米都有可能。</p>
+<p>4.信息提醒——来电、来信息时提醒：</p>
+<p>当手机来电时，O-Click会持续的闪绿灯。当存在未接来电时，未读信息时，O-Click每30S亮一次绿灯（目前共闪2次绿灯）。</p>
+<p>5.寻找遥控（连接检查）。</p>
+<p>手机小叮当界面底端点击连接检查，遥控器蜂鸣器会响，每点击一次响一声。</p>
+	
+		</div>
+		<div class="con_content">
+		<p id="t_qiao"><strong>小叮当升级方法和无法连接时的处理方式</strong></p>
+<p>小叮当升级方式：</p>
+<p>手机和O-Click保持连接，在小叮当界面底端右下角点击设置，设置中选择版本升级，自动开始检测新版本，检测到版本之后，点击确定，等待自动升级成功即可。</p><br />
+<p>小叮当和手机无法连接时的处理方式：</p>
+<p>小叮当和手机连接过之后，再次开启蓝牙，上面会显示有小叮当的历史记录，通常大家习惯性选择直接连接，提示无法正常连接小叮当，此时在蓝牙界面，点击小叮当右方的设置并选择取消适配，重新搜索小叮当进行适配连接即可。 </p>
+		<p id="message"><a href="javascript:void(0);">查看全部问题&gt;&gt;</a></p>
+		</div>	
+		</div>
+		<div class="shop_cont">
+		<div style="clear:both"></div>
+		<h2 class="video_about">视频介绍</h2>
+		<div class="shuaji">
+		<a href="javascript:void(0);"><img src="images/shuaji.png"></a>
+		<p><a href="javascript:void(0);">OPPO手机ColorOS系统刷机教程</a></p>
+		</div>
+		<div class="ColorOS">
+		<p class="C_head">ColorOS系统在线升级教程</p>
+<p>	新版本更新，会直接推送到手机中，可以通过手机直接操作系统更新。</p>
+<p>1、检测新版本：手机桌面--系统更新，当手机检测新版本，程序有图标通知（此通知的显示图标无法隐藏）；</p>
+<p>2、查看更新说明：进入程序，点击检测到的新版本，可以查看到新版本的更新说明；</p>
+<p>3、在线下载固件包：下载在线升级的固件包（手机在连接wifi状态下，自动下载安装包，但需要手动操作确认安装升级）；</p>
+<p>4、安装升级：下载成功后，点击安装，手机会自动关机并升级（为确保操作正常完成，手机电量需在40%以上，如电量不足会给予提示），升级完成，将自动开机。</p>
+<p>完整过程如下图：</p>
+<div>
+<img src="images/shua.png" />
+<img src="images/shua1.png" />
+</div>
+	<p class="C_hsua">ColorOS系统双清刷机教程</p>
+	<p class="text">手动刷机的方式会丢失您下载的第三方软件、存储在手机内存上的联系人和短信等，建议您在升级前，备份好您的重要资料。</p>
+<p>1、数据备份：可通过“手机桌面—工具—备份与恢复”进行操作（或通过手机助手连接到电脑端，将信息备份到电脑端）；</p>
+<p>2、下载固件包：刷机前将需要刷入的.zip格式ROM文件（无需解压）复制到手机的存储空间，并请直接放在根目录下（请勿放在任何文件夹里）；
+固件包下载链接：对应机型下载</p>
+<p>3、刷机升级：关闭手机，关机后同时按住电源键+音量减键约10秒即可进入下图“OPPO恢复模式”，接下来的过程按照图文教程进行ROM刷入即可；</p>
+<p>4、恢复数据：刷机完成之后，将备份的数据恢复即可。</p>
+		</div>
+		<div class="m_image">
+		<img src="images/sel1.jpg" />
+		<img src="images/sel2.jpg" />
+		<img src="images/sel3.jpg" />
+		<img src="images/sel4.jpg" />
+		</div>
+		</div>
+		</div>
+		</div>
+		<div style="clear:both"></div>
+		</div>
+		</div>
+		<div style="clear:both"></div>
+		<!-- shopping end -->
+		<!-- footer start -->
+		<div class="footer">
+		<div class="f_head">
+		<a href="javascript:void(0);">
+		<div class="Oppo">
+		<i class="f_left"></i>
+		<span>OPPO社区</span>
+		</div>
+		</a>
+		<a href="javascript:void(0);">
+		<div class="C_Os Oppo">
+		<i class="f_left"></i>
+		<span>ColorOS</span>
+		</div>
+		</a>
+		<a href="javascript:void(0);">
+		<div class="shopp Oppo">
+		<i class="f_left"></i>
+		<span>软件商店</span>
+		</div>
+		</a>
+		</div>
+		<div class="f_cont">
+		<div class="text">
+		<p>推荐机型</p>
+		<ul>
+		<li><a href="javascript:void(0);">R7s</a></li>
+		<li><a href="javascript:void(0);">R7 Plus</a></li>
+		<li><a href="javascript:void(0);">R7</a></li>
+		<li><a href="javascript:void(0);">R1C</a></li>
+		<li><a href="javascript:void(0);">N1 mini</a></li>
+		</ul>
+		</div>
+		<div class="text">
+		<p>在线购买</p>
+		<ul>
+		<li><a href="javascript:void(0);">手机</a></li>
+		<li><a href="javascript:void(0);">配件</a></li>
+		<li><a href="javascript:void(0);">购物指南</a></li>
+		<li><a href="javascript:void(0);">积分商城</a></li>
+		</ul>
+		</div>		
+		<div class="text">
+		<p>服务</p>
+		<ul>
+		<li><a href="javascript:void(0);">购买帮助</a></li>
+		<li><a href="javascript:void(0);">物流查询</a></li>
+		<li><a href="javascript:void(0);">常见问题</a></li>
+		<li><a href="javascript:void(0);">服务政策</a></li>
+		<li><a href="javascript:void(0);">服务网点查询</a></li>
+		</ul>
+		</div>		
+		<div class="text">
+		<p>会员相关</p>
+		<ul>
+		<li><a href="javascript:void(0);">会员登录</a></li>
+		<li><a href="javascript:void(0);">会员注册</a></li>
+		<li><a href="javascript:void(0);">积分兑换</a></li>
+		</ul>
+		</div>		
+		<div class="text">
+		<p>OPPO品牌</p>
+		<ul>
+		<li><a href="javascript:void(0);">关于OPPO</a></li>
+		<li><a href="javascript:void(0);">资讯</a></li>
+		<li><a href="javascript:void(0);">摄影作品</a></li>
+		<li><a href="javascript:void(0);">我们的视频</a></li>
+		</ul>
+		</div>		
+		</div>
+		<div style="clear:both"></div>
+		<div class="about">
+		<div class="c_about">
+		<div class="b_left">
+		<p class="t_tit"><span>关注我们</span>
+		<a href="javascript:void(0);" class="icon"><i class="weibo icon"></i></a>
+		<a href="javascript:void(0);" class="icon"><i class="WX icon"></i></a>
+		</p>
+		<span class="IOm_txt">加入我们</span>
+		<a href="javascript:void(0);" class="wom"><i class="Iom"></i></a>
+		</div>
+		<div class="b_right">
+		<a href="javascript:void(0);">
+		<div class="kefu">
+		 <span><s></s></span>
+		 <p class="ke_text">在线客服</p><s class="rig"></s>
+		 <i class="san"></i>
+		 <p>人工服务：8:30~22:00</p>
+		 <p>24小时智能机器人服务</p>
+		</div>
+		<div class="kefu tel">
+		 <span><s class="phone"></s></span>
+		 <p class="ke_text">4001-666-888</p>
+		 <p>7*24小时客服电话</p>
+		</div>
+		</a>
+		</div>
+		</div>
+		</div>
+		<div class="foot_info">
+		<p>© 2005 - 2016 广东欧珀电子工业有限公司 版权所有 粤ICP备08130115号-1</p>
+		<img src="images/dianzi.png">
+		</div>
+		</div>
+		<!-- footer end -->
+
+  <script type="text/javascript">
+
+	window.onload = function(){
+	var oList = document.getElementById("oList");
+	var aLi = oList.getElementsByTagName("li");
+	var s_right = document.getElementById("sp_right");
+	var oImgs = document.getElementById("Imgs");
+	var oNext = document.getElementById("next");
+	var oPrev = document.getElementById("prev");
+	var fright = document.getElementById("f_rights");
+	var oDiv = fright.children;
+	var num = 0;
+
+	oNext.onclick = function(){
+	if(num ==18){
+	
+	num=0;
+	
+	}
+	num++;
+	 oImgs.src= "images/"+num+'.png';
+
+	}
+
+	oPrev.onclick = function(){
+		if(num<=0){
+		
+		num=18;
+		
+		}
+	num--;
+	 oImgs.src= "images/"+num+'.png';
+
+	
+	}
+		
+		for(var i=0;i<aLi.length;i++){
+		aLi[i].index = i;
+		aLi[i].onclick = function(){
+	
+		for(var i=0;i<aLi.length;i++){
+		
+		aLi[i].className = " ";
+		oDiv[i].style.display="none";
+			
+		}
+	
+		aLi[this.index].className = "active";
+		oDiv[this.index].style.display = "block";
+
+		}
+
+		
+		}
+
+
+	}
+
+
+  </script>
+ </body>
+</html>

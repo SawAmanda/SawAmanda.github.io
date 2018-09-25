@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    * {padding: 0;margin: 0;}
+    .container {width: 1170px;margin: 0 auto;}
+
+    #header {width: 100%;background-image: url('image/home-bg.jpg');}
+    #header .container .logo {text-align: center;padding: 150px 0;}
+    #header .container .logo h1 {color: #fff;font-size: 80px;margin-bottom: 10px;}
+    #header .container .logo p {margin-top: 10px;color: #fff;font-size: 18px;font-weight: 300;}
+
+    #content {width: 100%;}
+    #content .container ul {display: flex;flex-wrap: wrap;justify-content: space-between;}
+    #content .container ul li {list-style:none;width: 300px;margin: 50px 25px;}
+    #content .container ul li a {display: block;text-decoration: none;}
+    #content .container ul li a p {text-align: center;color: #000;}
+
+
+
+
+
+
+    </style>
+
+    <script src="js/vue.js"></script>
+
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <h1>SawAmanda</h1>
+                <p>简单的项目展示</p>
+            </div>
+        </div>
+    </header>
+    <div id="content">
+        <div class="container">
+            <ul>
+                <li v-for="project in list">
+                    <a v-bind="{href:'project/'+project.url}">
+                        <img v-bind="{src:'image/'+project.image}" width="100%">
+                        <p>{{project.title}}</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+var test = new Vue({
+    el: '#content',
+    data: {
+        list: [
+            {image:'oppo-1.jpg',title:'oppo案例',url:'oppo'},
+            {image:'oppo-2.jpg',title:'oppo案例2',url:'oppo2'},
+            {image:'lol.jpg',title:'lol案例',url:'lol'},
+            {image:'tianmao.jpg',title:'天猫案例',url:'timao'},
+            {image:'xiaomi.jpg',title:'小米案例',url:'xiaomi'},
+            {image:'xiyou.jpg',title:'西游案例',url:'xiyou'},
+        ]
+    }
+})
+</script>
+</html>

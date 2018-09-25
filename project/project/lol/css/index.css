@@ -1,0 +1,56 @@
+*{ margin:0; padding:0;}table{ border-collapse:collapse; border-spacing:0;}em{font-style:normal;}ol,ul{ list-style:none;}fieldset,img,abbr,acronym{ border:0;}input,select{ vertical-align:middle;font-family: Microsoft YaHei;}h1,h2,h3,h4,h5,h6{ font-size:100%;}q:before,q:after{content:'';}body{font:normal 12px/1.6em Microsoft YaHei,Tahoma,simsun,sans-serif; padding-top:42px; color:#666; min-width: 1000px; margin: 0  auto; background: #000}.x{*zoom:1}.clearfix:after{content:'\20';display:block;height:0;line-height:0;visibility:hidden;clear:both}a{ text-decoration:none;}a:hover{ text-decoration:underline;}.hidden{ display:none;}.tnd{overflow: hidden;text-indent: -9999em;}
+.wraper{ background: url(http://game.gtimg.cn/images/lol/web201310/bg/index-bg-v17.jpg) no-repeat center top;}
+.toper{width: 1000px; margin:0 auto;height:464px; background: url(http://game.gtimg.cn/images/lol/web201310/bg/index-top-v17.jpg) no-repeat center top;}
+.slogan{padding:410px 0 0 430px;}
+.slogan-lnk{display: block;width: 140px; height: 43px;display:none;}
+.spr{ background-image: url(http://game.gtimg.cn/images/lol/web201310/index-spr.jpg); background-repeat: no-repeat;}
+.lnk{display: block; height: 100%; cursor: pointer;}
+.mainer{ width: 960px; margin: 0 auto; position: relative;}
+.downlnk,.otherlnk{float: left; width: 225px; height: 307px; box-shadow: 0 0 2px rgba(0,0,0,.3);}
+.downlnk{ margin-right: 10px;}
+.downlnk li,.gglnk{ float: left;width: 100%;}
+.download_fst{height: 112px}
+.download_lst{height: 65px;}
+.download_xzq{ background-position: 0 0;position: relative;}
+/*.download_xzq:hover{background: url(http://game.gtimg.cn/images/lol/client/new201301/smoke.png);}*//*-moz-mask:-moz-gradient(linear,left top,left bottom,from(rgba(0,0,0,0)),to(rgba(0,0,0,1)));*/
+.download_xzq strong,.os_lnk strong{position: absolute;bottom: 1px;left: 0;width: 100%; display: block; height: 110px;overflow: hidden; text-indent: -999em;
+	-moz-animation:smoke1 40s linear infinite;
+	-webkit-animation:smoke1 40s linear infinite;
+}
+.download_xzq strong{background: url(http://game.gtimg.cn/images/lol/web201310/smoke.png) repeat -53px -148px; opacity: 0.4}
+.os_lnk strong{height:173px;background: url(http://game.gtimg.cn/images/lol/web201310/smoke2.png) repeat -53px -148px; opacity: 0.1}
+.download_xzq:hover strong,.os_lnk:hover strong{-webkit-animation:smoke1 20s linear infinite}
+@-moz-keyframes smoke1{0%{background-position:0 0;} 100%{background-position:0 -730px;}}
+@-webkit-keyframes smoke1{0%{background-position:0 0;} 100%{background-position:0 -730px;}}
+/*.download_xf{ background-position: 0 -112px}
+.download_lx{ background-position: 0 -177px}
+.download_more{ background-position: -225px -177px}
+.download_xf:hover{ background-position: -450px -112px}
+.download_lx:hover{ background-position: -450px -177px}
+.download_more:hover{ background-position: -675px -177px}*/
+.download_xf{ background-position: -450px -112px}
+.download_lx{ background-position: -450px -177px}
+.download_more{ background-position: -675px -177px}
+
+.videobox{float: left;width: 490px; height: 307px; background-color: #000;box-shadow: 0 0 2px rgba(0,0,0,.3)}
+.otherlnk{float: right;}
+.os_lnk{width: 225px; height: 176px; margin-bottom: 9px; background-position: -225px 0;position: relative;}
+.newbie_lnk{height: 120px; overflow: hidden;position: relative; background-repeat: no-repeat;}
+.newbie_lnk:hover{background-position: 0 -120px;}
+.gglnk{margin-top: 10px; height: 110px;}
+.gglnk_lnk{float: left; width: 240px; height: 110px;position: relative;overflow: hidden;background-repeat: no-repeat;}
+.gglnk_lnk:hover{background-position: 0 -110px;}
+.footer{width: 960px;margin:0 auto;padding-top:93px; height: 100px; overflow:hidden;zoom:1;color:#363636}
+.footer-tcgame{ float: left; width:180px;height:50px;}
+.footer-flst{float: right; _width: 715px;}
+.footer .c4F6{color:#363636}
+.footer .plr10{padding:0 5px}
+.footer .f9{font-size:11px;color:#363636}
+/*.footer{width: 960px;margin:0 auto;padding-top:93px; height: 100px; overflow:hidden;zoom:1;color:#3F567A}*/
+/*.footer-tcgame{ float: left; width:180px;height:50px;}*/
+/*.footer-flst{float: right; _width: 715px;}*/
+/*.footer .c4F6{color:#3F567A}*/
+/*.footer .plr10{padding:0 5px}*/
+/*.footer .f9{font-size:11px;color:#3F567A}*/
+.footer .fr{float: right;}
+.app-ewm{width: 170px;height: 162px;position: absolute;right: 68px;bottom: 0;z-index: 9;padding-left: 5px;}/*  |xGv00|bd3ae87cfc0496fc9b2d47899a35edb9 */
